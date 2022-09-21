@@ -15,9 +15,6 @@ Users should be able to:
 - SASS
 - JAVASCRIPT
 
-## Links
-
-- Solution URL: https://simonemarketti.github.io/calc/
 
 ## Notes
 
