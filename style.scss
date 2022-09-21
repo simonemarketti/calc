@@ -1,0 +1,341 @@
+// ------------ Theme 1 --------------  //
+$background: hsla(223, 26%, 31%, 1);
+$calc-screen: hsla(224, 36%, 15%, 1);
+$calc-body: hsla(224, 30%, 21%, 1);
+$button: hsla(31, 24%, 89%, 1);
+$button-shadow: inset 0px -4px 0px #b3a497;
+$number: hsla(221, 14%, 31%, 1);
+$reset-del: hsla(224, 21%, 49%, 1);
+$reset-del-shadow: inset 0px -4px 0px #414e73;
+$equal-circle: hsla(6, 63%, 50%, 1);
+$equal-shadow: inset 0px -4px 0px #93261a;
+$title-controls: hsla(360, 100%, 100%, 1);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: $background;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  .header {
+    .first-line {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        color: $title-controls;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: -0.533333px;
+      }
+
+      .num {
+        width: 81px;
+        display: flex;
+        justify-content: space-between;
+        color: $title-controls;
+        font-size: 16px;
+        line-height: 13px;
+        padding: 0 2px 0 5px;
+
+        p {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .second-line {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 32px;
+
+      p {
+        color: $title-controls;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 13px;
+        margin-right: 21px;
+        padding-top: 5px;
+      }
+
+      .box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 81px;
+        height: 26px;
+        background-color: $calc-screen;
+        border-radius: 30px;
+
+        .circle {
+          width: 16px;
+          height: 16px;
+          background-color: $equal-circle;
+          z-index: 1;
+          border-radius: 30px;
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  .screen {
+    width: 540px;
+
+    .screen-out {
+      background-color: $calc-screen;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      height: 128px;
+      color: $title-controls;
+      text-align: right;
+      padding: 0 32px;
+      font-size: 48px;
+      line-height: 54px;
+      letter-spacing: -0.8px;
+      user-select: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.container {
+  .calc-body {
+    .btn {
+      display: flex;
+      justify-content: space-between;
+      align-content: space-around;
+      width: 540px;
+      height: 480px;
+      padding: 0 20px;
+      background-color: $calc-body;
+      margin: 24px 0;
+      flex-flow: wrap;
+      border-radius: 10px;
+
+      button {
+        width: 101px;
+        height: 64px;
+        outline: none;
+        cursor: pointer;
+        border: 0;
+        border-radius: 5px;
+        background-color: $button;
+        box-shadow: $button-shadow;
+        color: $number;
+        font-size: 32px;
+        letter-spacing: -0.53px;
+      }
+
+      .reset {
+        width: 227px;
+        background-color: $reset-del;
+        box-shadow: $reset-del-shadow;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: -0.333333px;
+        color: $title-controls;
+      }
+
+      .del {
+        background-color: $reset-del;
+        box-shadow: $reset-del-shadow;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: -0.333333px;
+        color: $title-controls;
+      }
+
+      .equal {
+        width: 227px;
+        background-color: $equal-circle;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: -0.333333px;
+        color: $title-controls;
+        box-shadow: $equal-shadow;
+      }
+    }
+  }
+}
+
+//-------------- Theme 2 ----------------------//
+$background-2: hsla(0, 0%, 90%, 1);
+$calc-controls-2: hsla(0, 5%, 81%, 1);
+$calc-screen-2: hsla(9, 1%, 93%, 1);
+$calc-body-2: hsla(0, 5%, 81%, 1);
+$button-2: hsla(45, 7%, 89%, 1);
+$button-shadow-2: inset 0px -4px 0px #a79e91;
+$number-2: hsla(60, 10%, 19%, 1);
+$reset-del-2: hsla(184, 42%, 37%, 1);
+$reset-del-shadow-2: inset 0px -4px 0px #1b6066;
+$reset-del-char-2: hsla(0, 0%, 100%, 1);
+$title-controls-2: hsla(60, 10%, 19%, 1);
+
+body.theme2 {
+  background-color: $background-2;
+
+  .container {
+    .header {
+      .first-line {
+        h3 {
+          color: $title-controls-2;
+        }
+
+        .num {
+          color: $title-controls-2;
+        }
+      }
+
+      .second-line {
+        p {
+          color: $title-controls-2;
+        }
+
+        .box {
+          justify-content: center;
+          background-color: $calc-controls-2;
+        }
+      }
+    }
+  }
+
+  .screen {
+    .screen-out {
+      background-color: $calc-screen-2;
+      color: $title-controls-2;
+    }
+  }
+
+  .calc-body {
+    .btn {
+      background-color: $calc-body-2;
+
+      button {
+        background-color: $button-2;
+        box-shadow: $button-shadow-2;
+        color: $number-2;
+      }
+
+      .reset {
+        background-color: $reset-del-2;
+        box-shadow: $reset-del-shadow-2;
+        color: $reset-del-char-2;
+      }
+
+      .del {
+        background-color: $reset-del-2;
+        box-shadow: $reset-del-shadow-2;
+        color: $reset-del-char-2;
+      }
+    }
+  }
+}
+
+//-------------- Theme 3 ----------------------//
+$background-3: hsla(267, 74%, 9%, 1);
+$calc-controls-3: hsla(268, 71%, 12%, 1);
+$calc-screen-3: hsla(268, 71%, 12%, 1);
+$calc-body-3: hsla(268, 71%, 12%, 1);
+$button-3: hsla(268, 47%, 21%, 1);
+$button-shadow-3: inset 0px -4px 0px #881c9e;
+$number-3: hsla(52, 100%, 62%, 1);
+$reset-del-3: hsla(280, 90%, 26%, 1);
+$reset-del-shadow-3: inset 0px -4px 0px #be15f4;
+$reset-del-char-3: hsla(0, 0%, 100%, 1);
+$title-controls-3: hsla(52, 100%, 62%, 1);
+$equal-circle-3: hsla(176, 100%, 44%, 1);
+$equal-shadow-3: inset 0px -4px 0px #6cf9f1;
+$equal-color: hsla(198, 20%, 13%, 1);
+body.theme3 {
+  background-color: $background-3;
+
+  .container {
+    .header {
+      .first-line {
+        h3 {
+          color: $title-controls-3;
+        }
+
+        .num {
+          color: $title-controls-3;
+        }
+      }
+
+      .second-line {
+        p {
+          color: $title-controls-3;
+        }
+
+        .box {
+          justify-content: flex-end;
+          background-color: $calc-controls-3;
+
+          .circle {
+            background-color: $equal-circle-3;
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .screen {
+    .screen-out {
+      background-color: $calc-screen-3;
+      color: $title-controls-3;
+    }
+  }
+
+  .calc-body {
+    .btn {
+      background-color: $calc-body-3;
+
+      button {
+        background-color: $button-3;
+        box-shadow: $button-shadow-3;
+        color: $number-3;
+      }
+
+      .reset {
+        background-color: $reset-del-3;
+        box-shadow: $reset-del-shadow-3;
+        color: $reset-del-char-3;
+      }
+
+      .del {
+        background-color: $reset-del-3;
+        box-shadow: $reset-del-shadow-3;
+        color: $reset-del-char-3;
+      }
+
+      .equal {
+        background-color: $equal-circle-3;
+        color: $equal-color;
+        box-shadow: $equal-shadow-3;
+      }
+    }
+  }
+}
+
