@@ -9,6 +9,12 @@ Users should be able to:
 
 - Dinamic ClassList
 
+## Languages and tools
+
+- HTML
+- SASS
+- JAVASCRIPT
+
 ## Links
 
 - Solution URL: https://simonemarketti.github.io/calc/
